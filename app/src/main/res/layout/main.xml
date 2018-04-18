@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <FrameLayout
+        android:id="@+id/main_fragment1"
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="0dp" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/main_tab_butt1"
+            style="@style/main_button"
+            android:drawableTop="@mipmap/shouye1_03"
+            android:onClick="MainButt"
+            android:text="首页" />
+        <RadioButton
+            android:id="@+id/main_tab_butt2"
+            style="@style/main_button"
+            android:drawableTop="@mipmap/zhuanti1_03"
+            android:onClick="MainButt"
+            android:text="专题" />
+        <RadioButton
+            android:id="@+id/main_tab_butt5"
+            style="@style/main_button"
+            android:layout_weight="3"
+            android:onClick="MainButt"
+            android:text="发布"
+            android:drawableTop="@mipmap/fabu1_03" />
+        <RadioButton
+            android:id="@+id/main_tab_butt3"
+            style="@style/main_button"
+            android:drawableTop="@mipmap/huodong1_03"
+            android:onClick="MainButt"
+            android:text="活动" />
+        <RadioButton
+            android:id="@+id/main_tab_butt4"
+            style="@style/main_button"
+            android:drawableTop="@mipmap/wode1_03"
+            android:onClick="MainButt"
+            android:text="我的" />
+    </RadioGroup>
+</LinearLayout>

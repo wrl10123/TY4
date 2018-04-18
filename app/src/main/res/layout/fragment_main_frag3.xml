@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeff2">
+
+    <TextView
+        android:id="@+id/hd_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:height="30dp"
+        android:textSize="20dp"
+        android:text="活动" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hd_title">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/hd_relative2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#F5FFFA">
+                <ImageView
+                    android:id="@+id/hd_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/huodong1"
+                    android:adjustViewBounds="true"/>
+                <TextView
+                    android:id="@+id/hd_img_zbf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hd_img"
+                    android:text="索尼中国"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/hd_relative3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#F5FFFA"
+                android:layout_below="@id/hd_title">
+                <ImageView
+                    android:id="@+id/hd_img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/huodong2"
+                    android:adjustViewBounds="true"/>
+                <TextView
+                    android:id="@+id/hd_img_zbf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hd_img2"
+                    android:text="中国摄影报社"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

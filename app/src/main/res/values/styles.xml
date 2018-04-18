@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- NoActionBar 隐藏了自带的标题栏 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!-- 调整手机状态栏背景色 -->
+        <!--<item name="android:statusBarColor">#55030303</item>-->
+        <!-- 隐藏状态栏 -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!-- 隐藏标题栏 -->
+        <!--<item name="android:windowNoTitle">true</item>-->
+    </style>
+
+    <!-- 1.1首页 导航栏的样式 -->
+    <style name="main_button">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+    <!-- 1.2首页 图片主题样式 -->
+    <style name="main_img_zhuti">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <!-- 1.3首页 文字主题样式-->
+    <style name="main_text_zhuti">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_margin">15dp</item>
+    </style>
+
+    <!-- 1.4首页 个人主页文字样式 -->
+    <style name="main_frg5_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">	#00E5EE</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 图片详情页2 底部按钮样式 -->
+    <style name="img_info2_tab" parent="main_button">
+
+    </style>
+</resources>

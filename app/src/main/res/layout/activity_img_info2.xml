@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.sc.ty4.Controller.Activity.ImgInfo2">
+    <ImageView
+        android:id="@+id/img_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/songshu" />
+    <RelativeLayout
+        android:id="@+id/img_info2_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/houtui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/houtui1_03" />
+
+        <RelativeLayout
+            android:id="@+id/img_info_relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/img_info2_relative2"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/img_info2_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/photo1" />
+
+            <TextView
+                android:id="@+id/img_info2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_info2_head"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/img_info2_head"
+                android:text="天王盖地虎"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/img_info2_relative2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@id/img_info2_shanghua"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img_info2_dianzan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/dianzan1" />
+
+            <TextView
+                android:id="@+id/img_info2_dianzan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_info2_dianzan"
+                android:text="99"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_info2_pinglun"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/pinglun" />
+
+            <ImageView
+                android:id="@+id/img_info2_fenxiang"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/fenxiang" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_info2_shanghua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/shanghua2_03" />
+    </RelativeLayout>
+</RelativeLayout>

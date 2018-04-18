@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/img_info3_relative2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="#FFF">
+    <!-- 个人图像 -->
+    <ImageView
+        android:id="@+id/img_info3_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp" />
+    <!-- 显示一个用户名 -->
+    <TextView
+        android:id="@+id/img_info3_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_info3_head"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/img_info3_button1"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/guanzhu3" />
+    <!-- 作品的大图 -->
+    <ImageView
+        android:id="@+id/img_info3_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_info3_name"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true" />
+    <!-- 作品的名字 -->
+    <TextView
+        android:id="@+id/img_info3_imgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_info3_photo"
+        android:layout_margin="10dp"
+        android:textSize="16sp"/>
+    <RelativeLayout
+        android:id="@+id/img_info3_relative3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/img_info3_imgName">
+        <ImageView
+            android:id="@+id/img_info3_dianzan"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/dianzan1" />
+        <TextView
+            android:id="@+id/img_info3_dianzan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_info3_dianzan"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:text="66"/>
+        <TextView
+            android:id="@+id/img_indo_pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_info3_dianzan2"
+            android:layout_marginLeft="40dp"
+            android:textSize="16dp"
+            android:text="评论(45)"/>
+        <TextView
+            android:id="@+id/img_indo_zhuanfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textSize="16dp"
+            android:text="转发"/>
+    </RelativeLayout>
+</RelativeLayout>

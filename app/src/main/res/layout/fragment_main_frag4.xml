@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeff2" >
+    <!-- 背景 -->
+    <ImageView
+        android:id="@+id/main_frg5_iv1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/youname" />
+    <!-- 一个按钮 -->
+    <!--<Button
+        android:id="@+id/main_frg5_baocun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="启动相机"
+        android:textSize="16dp" />-->
+    <!-- 个人图像 -->
+    <ImageView
+        android:id="@+id/iv_personal_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/main_frg5_name"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/default_personal_image" />
+
+    <!-- 用户名 -->
+    <TextView
+        android:id="@+id/main_frg5_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_frg5_iv1"
+        android:layout_margin="16dp"
+        android:text="用户名"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/main_frg5_spirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_frg5_name"
+        android:layout_marginLeft="16dp"
+        android:text="个人说明个人说明"
+        android:textSize="16dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_frg5_spirt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_frg5_guanzhu"
+            style="@style/main_frg5_text"
+            android:drawableBottom="@mipmap/guanzhu"
+            android:text="113" />
+
+        <RadioButton
+            android:id="@+id/main_frg5_fensi"
+            style="@style/main_frg5_text"
+            android:drawableBottom="@mipmap/fensi"
+            android:text="1999" />
+
+        <RadioButton
+            android:id="@+id/main_frg5_beizan"
+            style="@style/main_frg5_text"
+            android:drawableBottom="@mipmap/beizan"
+            android:text="74352" />
+    </RadioGroup>
+</RelativeLayout>

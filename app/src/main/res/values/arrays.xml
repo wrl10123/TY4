@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 1.1主页 文字主题的文字 -->
+    <array name="main_wenzi_theme">
+        <item>推荐</item>
+        <item>一键海报</item>
+        <item>视频</item>
+        <item>摄影</item>
+        <item>颜值</item>
+        <item>空缺</item>
+        <item>空缺</item>
+        <item>空缺</item>
+    </array>
+    <!-- 1.2分类 页面最上面的文字主题 -->
+    <array name="fenlei_wenzi_theme">
+        <item>推荐</item>
+        <item>分类</item>
+        <item>摄影入门</item>
+        <item>摄影技巧</item>
+        <item>空缺</item>
+    </array>
+    <!-- 浏览图片的ListView页面 -->
+        <!-- 个人图像的数组 -->
+    <string-array name="main_lv_head">
+        <item>@drawable/head1</item>
+        <item>@drawable/head2</item>
+        <item>@drawable/head3</item>
+        <item>@drawable/head4</item>
+    </string-array>
+        <!-- 用户名 -->
+    <string-array name="main_lv_name">
+        <item>用户1</item>
+        <item>用户2</item>
+        <item>用户3</item>
+        <item>用户4</item>
+    </string-array>
+        <!-- 作品图 -->
+    <string-array name="main_lv_photo">
+        <item>@drawable/photo2</item>
+        <item>@drawable/photo2</item>
+        <item>@drawable/photo4</item>
+        <item>@drawable/photo4</item>
+    </string-array>
+        <!--  作品的名字 -->
+    <string-array name="main_lv_photoname">
+        <item>小桥</item>
+        <item>狗</item>
+        <item>最后一点余晖</item>
+        <item>小狗</item>
+    </string-array>
+</resources>
