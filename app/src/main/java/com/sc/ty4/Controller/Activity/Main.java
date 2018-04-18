@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.sc.ty4.Controller.Fragment.MainFrag1;
 import com.sc.ty4.Controller.Fragment.MainFrag2;
@@ -38,6 +39,7 @@ public class Main extends AppCompatActivity {
             //将状态栏设置成透明色
             //getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
+        Toast.makeText(Main.this,"~~~~@#",Toast.LENGTH_SHORT).show();
 
         iniv();
     }
